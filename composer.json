@@ -3,6 +3,7 @@
     "description": "Code Editor TinyMCE Plugin",
     "type": "yii2-extension",
     "require": {
-        "tinymce/tinymce": ">=4"
+        "tinymce/tinymce": ">=4",
+        "composer/installers": "~1.0"
     }
 }

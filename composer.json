@@ -4,8 +4,8 @@
     "type": "yii2-extension",
     "installer-paths": {
 	  "vendor/test1/{$name}": ["yii2-extension"]
-	},
+     },
     "require": {
         "tinymce/tinymce": ">=4"
-    },
+    }
 }

@@ -2,9 +2,6 @@
     "name": "softerra/code_editor_tinymce_plugin",
     "description": "Code Editor TinyMCE Plugin",
     "type": "yii2-extension",
-    "installer-paths": {
-	  "vendor/test1/{$name}": ["yii2-extension"]
-     },
     "require": {
         "tinymce/tinymce": ">=4"
     }

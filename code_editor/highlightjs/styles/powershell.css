@@ -1,0 +1,21 @@
+code.powershell {
+	color: #2f4996;
+	font-family: "PT Mono", monospace;
+	font-size: 14px;
+}
+
+.powershell .hljs-variable {
+	color: #8a2dcb;
+}
+
+.powershell .hljs-string {
+	color: #ad0505;
+}
+
+.powershell .hljs-comment {
+	color: #338e17;
+}
+
+.powershell .hljs-const {
+	color: #001eff;
+}

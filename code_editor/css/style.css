@@ -1,0 +1,27 @@
+#text {
+    display: inline-block;
+    height: 390px;
+    width: 100%;
+    resize: none;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: scroll;
+}
+
+pre {
+    height: 390px;
+    overflow-x: auto;
+    padding: 0 5px;
+    width: 100%;
+}
+#languageTabContainer {
+    margin-top: 25px;
+}
+#languageTabContainer .btn-group {
+    margin-bottom: 5px;
+}
+#languageTabContainer .remove {
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}

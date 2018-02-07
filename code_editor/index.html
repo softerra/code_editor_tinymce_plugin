@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Code Editor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="highlightjs/styles/powershell.css">
+</head>
+<body>
+
+<form action="">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<br>
+				<p>To insert/update the code, enter the code below and click Insert.</p>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span4">
+				<div>
+					<label id="languagelabel" for="language">Language</label>
+					<select id="language" name="language">
+						<option value="powershell" selected>PowerShell</option>
+					</select>
+				</div>
+			</div>
+			<div class="span8">
+				<div id="languageTabContainer"></div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6">
+				<label for="text">Code</label>
+				<textarea id="text" name="text" onkeyup="ScriptCodeDialog.updatePreview();" class="scrollable"
+						  onmouseup="ScriptCodeDialog.updatePreview();"
+						  ></textarea>
+			</div>
+			<div class="span6">
+				<label for="codePreview">Preview</label>
+
+				<div id="codePreview" class="codePreview">
+					<pre class="scrollable" id="codePreviewPre"><code class="powershell"></code></pre>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="pull-right">
+					<input type="button" class="btn btn-primary" name="insert" id="insert" value="Insert">&nbsp;
+					<!--<input type="button" class="btn btn-info" name="insert" id="addLang" value="Add another language" onclick="ScriptCodeDialog.addLanguage();">&nbsp;-->
+					<input type="button" id="cancel" class="btn btn-inverse" value="Cancel">
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<script type="text/html" id="plugin_tpl">
+<div class="codePluginHolder mceNonEditable" pluginCommand="mceCodeEditor">
+	<div class="codeToolbar">
+		<span class="codeEditor-Edit">Edit</span>
+		<span class="codeEditor-Remove">Remove</span>
+	</div>
+	<div class="codeTitle"><%=title%></div>
+	<div class="codeHolder">
+		<%=code_blocks%>
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="code_tpl">
+<pre class="codeBlock"><code class="<%=language%>"><%=code%></code></pre>
+</script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="highlightjs/highlight.pack.js"></script>
+<script src="highlightjs/custom.powershell.js"></script>
+<script src="js/code_dialog.js"></script>
+</body>
+</html>

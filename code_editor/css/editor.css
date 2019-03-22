@@ -1,0 +1,65 @@
+.codePluginHolder {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.codeEditor-Edit, .codeEditor-Remove {
+	cursor: pointer;
+}
+
+pre {
+	overflow: auto;
+	white-space: pre;
+    	background-color: #fafafa;
+    	border: 1px solid #ccc;
+    	clear: both;
+    	margin-top: 0;
+    	padding: 10px;
+/*  overflow: hidden;
+    white-space: pre-wrap;*/
+}
+
+code{
+	display: inline-block;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+
+.codeToolbar {
+	float: right;
+}
+
+ .codePluginHolder .codeTitle {
+	display: inline-block;
+	font-size: 12px;
+	background-color: #e3e3e3;
+	padding: 6px 12px;
+	color: #000;
+} 
+
+.codeToolbar .codeEditor-Edit,
+.codeToolbar .codeEditor-Remove {
+	display: inline-block;
+	height: 26px;
+	padding: 0 12px;
+
+	line-height: 26px;
+	text-decoration: none;
+
+	border: 1px solid #b3b3b3;
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
+	background-color: #e3e3e3;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#d9d9d9));
+	background-image: -webkit-linear-gradient(top, #fff, #d9d9d9);
+	background-image: -o-linear-gradient(top, #fff, #d9d9d9);
+	background-image: linear-gradient(to bottom, #fff, #d9d9d9);
+	background-repeat: repeat-x;
+	cursor: pointer;
+
+	font-size: 12px;
+}
